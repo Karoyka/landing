@@ -8,10 +8,10 @@ export const sanitizers: Partial<Record<keyof WaitlistFormValues, (v: string) =>
     phone: v => v.replace(/[^\d+\s()\-]/g, ''),
 }
 
-export const validators: Partial<Record<keyof WaitlistFormValues, (v: string) => string>> = {
-    email:    v => (v && !EMAIL_RE.test(v)) ? 'Введите корректный email' : '',
-    phone:    v => (v && !PHONE_RE.test(v)) ? 'Введите корректный номер телефона' : '',
-    category: v => !(v as unknown as string[]).length ? 'Выберите категорию' : '',
+export const validators: Partial<Record<keyof WaitlistFormValues, (v: string | string[]) => string>> = {
+    email:    v => (v && !EMAIL_RE.test(v as string)) ? 'Введите корректный email' : '',
+    phone:    v => (v && !PHONE_RE.test(v as string)) ? 'Введите корректный номер телефона' : '',
+    category: v => !(v as string[]).length ? 'Выберите категорию' : '',
 }
 
 export const validateAll = (values: WaitlistFormValues): FormErrors =>
