@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Lora } from "next/font/google";
 import "./globals.css";
+import { CookieBanner } from "@/components/CookieBanner";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
@@ -74,6 +75,7 @@ export default function RootLayout({
     <html lang="ru" className={`${inter.variable} ${lora.variable}`}>
       <body className="antialiased">
         {children}
+        <CookieBanner />
       </body>
     </html>
   );
