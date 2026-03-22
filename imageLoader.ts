@@ -1,3 +1,4 @@
 export default function imageLoader({ src }: { src: string }) {
-    return `/landing${src}`
+    const prefix = process.env.NODE_ENV === 'production' ? '/landing' : '';
+    return `${prefix}${src}`;
 }
