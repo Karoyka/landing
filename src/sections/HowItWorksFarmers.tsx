@@ -52,7 +52,8 @@ export const HowItWorksFarmers = () => {
                 </div>
                 <InviteButton
                     title='Присоединиться сейчас'
-                    className='hidden xl:block shrink-0 px-6 h-12 text-white font-medium text-base leading-6'
+                    href='#join'
+                    className='hidden xl:flex items-center justify-center shrink-0 px-6 h-12 text-white font-medium text-base leading-6'
                 />
             </div>
 
@@ -115,7 +116,8 @@ export const HowItWorksFarmers = () => {
             {/* Mobile button */}
             <InviteButton
                 title='Присоединиться сейчас'
-                className='xl:hidden w-full h-14 text-white font-medium text-base leading-6'
+                href='#join'
+                className='xl:hidden w-full h-14 text-white font-medium text-base leading-6 flex items-center justify-center'
             />
         </div>
     )

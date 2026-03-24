@@ -17,7 +17,8 @@ export const CookieBanner = () => {
   const handleDecline = () => setVisible(false);
 
   return (
-    <div className="fixed bottom-8 left-4 right-4 z-50 xl:bottom-6 xl:left-[275px] xl:right-[275px]">
+    <div className="fixed bottom-8 left-0 right-0 z-50 xl:bottom-6">
+      <div className="max-w-screen-xl mx-auto px-5 xl:px-[275px]">
       {/* Mobile */}
       <div className="xl:hidden bg-cookie-bg text-white rounded-2xl p-5 flex flex-col gap-4">
         <p className="text-sm leading-5">
@@ -61,6 +62,7 @@ export const CookieBanner = () => {
             Принять
           </button>
         </div>
+      </div>
       </div>
     </div>
   );

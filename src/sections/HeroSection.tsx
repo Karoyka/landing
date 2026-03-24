@@ -37,7 +37,8 @@ export const HeroSection = () => {
 
             <div className='flex flex-col flex-1 gap-[12px] xl:w-[400px]'>
                 <InviteButton title='Присоединиться сейчас'
-                              className='w-full h-14 text-surface font-medium text-base leading-6 rounded-2xl'/>
+                              href='#join'
+                              className='w-full h-14 text-surface font-medium text-base leading-6 rounded-2xl flex items-center justify-center'/>
                 <p className='text-text-muted font-normal text-sm leading-5 tracking-[-0.15px] text-left'>
                     ...к списку ожидания. Как только мы будем готовы добавлять новых пользователей в платформу — мы
                     расскажем вам об этом
