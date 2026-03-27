@@ -23,6 +23,14 @@ jobs:
           npm ci
           npm run build
 
+      - name: Clear public_html
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: rm -rf ~/public_html/* ~/public_html/.[^.]*
+
       - name: Deploy to server
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -30,5 +38,5 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "out/*"
-          target: "~/public_html/landing/"
+          target: "~/public_html/"
           strip_components: 1
