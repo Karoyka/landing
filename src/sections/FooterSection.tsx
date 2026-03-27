@@ -16,7 +16,7 @@ export default function FooterSection() {
             className="object-contain object-bottom"
           />
         </div>
-        <div className="relative self-start -mt-10 -ml-16 w-52">
+        <a href="https://t.me/karoyka" target="_blank" rel="noopener noreferrer" className="relative self-start -mt-10 -ml-16 w-52 block">
           <div className="bg-[#E9EEE1] rounded-xl px-4 py-4 font-display font-normal italic text-base leading-6 tracking-[-0.31px] text-black flex items-start gap-2">
             <span className="flex-1">Присоединяйтесь к нашему Telegram-каналу</span>
             <svg className="shrink-0 mt-0.5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@ export default function FooterSection() {
           >
             <path d="M0 27C0 27 8.65576 24.9786 14.7741 15.1604C18.1248 9.78364 21 0 21 0H4.25049C4.25049 0 7.52137 4.47594 6.71551 13.139C6.2054 18.6228 0 27 0 27Z" fill="#E9EEE1"/>
           </svg>
-        </div>
+        </a>
       </div>
 
       {/* Cow banner — desktop */}
@@ -50,7 +50,7 @@ export default function FooterSection() {
             className="absolute bottom-0 left-0 h-full w-auto object-contain object-bottom"
           />
         </div>
-        <div className="absolute left-75 -top-2.5 z-10">
+        <a href="https://t.me/karoyka" target="_blank" rel="noopener noreferrer" className="absolute left-75 -top-2.5 z-10 block">
           <div className="relative">
             <div className="bg-[#E9EEE1] rounded-xl px-6 py-4 font-display font-normal italic text-base leading-6 tracking-[-0.31px] text-black flex items-center gap-3">
               Присоединяйтесь к нашему Telegram-каналу
@@ -69,7 +69,7 @@ export default function FooterSection() {
               <path d="M0 27C0 27 8.65576 24.9786 14.7741 15.1604C18.1248 9.78364 21 0 21 0H4.25049C4.25049 0 7.52137 4.47594 6.71551 13.139C6.2054 18.6228 0 27 0 27Z" fill="#E9EEE1"/>
             </svg>
           </div>
-        </div>
+        </a>
       </div>
 
       {/* Dark footer */}
