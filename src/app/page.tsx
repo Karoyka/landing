@@ -53,7 +53,7 @@ export default function Home() {
                     </div>
                     <div id="how-it-works"><HowItWorksSection/></div>
                     <div id="how-it-works-farmers"><HowItWorksFarmers/></div>
-                    <HowItWorksBuyers/>
+                    <div id="how-it-works-buyers"><HowItWorksBuyers/></div>
                     <div id="join"><JoinWaitlistSection/></div>
                     <div id="reviews"><ReviewsSection/></div>
                     <FooterSection/>

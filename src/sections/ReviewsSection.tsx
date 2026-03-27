@@ -98,14 +98,13 @@ function ReviewCardCenter({review}: { review: Review }) {
 }
 
 function MobileCarousel() {
-    const [emblaRef] = useEmblaCarousel({align: "start", loop: false, dragFree: false});
+    const [emblaRef] = useEmblaCarousel({align: "center", loop: false, dragFree: false});
     return (
         <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex items-stretch gap-4 pl-4">
+            <div className="flex items-stretch gap-4">
                 <div className="flex-none w-[82%]"><ReviewCardSide review={review1}/></div>
                 <div className="flex-none w-[82%]"><ReviewCardCenter review={review2}/></div>
                 <div className="flex-none w-[82%]"><ReviewCardSide review={review3}/></div>
-                <div className="flex-none w-4"/>
             </div>
         </div>
     );

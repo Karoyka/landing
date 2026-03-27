@@ -4,7 +4,7 @@ export default function FooterSection() {
   return (
     <footer>
       {/* Cow banner — mobile */}
-      <div className="xl:hidden flex items-end pr-4 pt-10 gap-4 -mx-5">
+      <div className="xl:hidden flex items-end pr-4 pt-10 gap-4 -mx-5 overflow-hidden">
         <div className="shrink-0 -ml-[50%]">
           <Image
             src="/image/cow.png"
@@ -84,12 +84,12 @@ export default function FooterSection() {
             </p>
             <div className="grid grid-cols-2 gap-x-4">
               <ul className="space-y-3">
-                <li><a href="#" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white">Как это работает</a></li>
-                <li><a href="#" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white">Для фермеров</a></li>
-                <li><a href="#" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white">Для покупателей</a></li>
+                <li><a href="#how-it-works" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white">Как это работает</a></li>
+                <li><a href="#how-it-works-farmers" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white">Для фермеров</a></li>
+                <li><a href="#how-it-works-buyers" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white">Для покупателей</a></li>
               </ul>
               <ul className="space-y-3">
-                <li><a href="#" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white">Политика использования cookie-файлов</a></li>
+                <li><a href="https://docs.google.com/document/d/1wL09XjZKP3ZLpv1yyBhqMdvIAhxOoHRROI_qM_ZBdII/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white">Политика использования cookie-файлов</a></li>
                 <li><a href="#" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white">Пользовательское соглашение</a></li>
               </ul>
             </div>
@@ -106,9 +106,9 @@ export default function FooterSection() {
             </div>
             <div className="flex gap-8">
               <ul className="space-y-3">
-                <li><a href="#" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white hover:text-white transition-colors">Как это работает</a></li>
-                <li><a href="#" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white hover:text-white transition-colors">Для фермеров</a></li>
-                <li><a href="#" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white hover:text-white transition-colors">Для покупателей</a></li>
+                <li><a href="#how-it-works" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white hover:text-white transition-colors">Как это работает</a></li>
+                <li><a href="#how-it-works-farmers" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white hover:text-white transition-colors">Для фермеров</a></li>
+                <li><a href="#how-it-works-buyers" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white hover:text-white transition-colors">Для покупателей</a></li>
               </ul>
               <ul className="space-y-3">
                 <li><a href="#" className="font-semibold text-xs leading-6 tracking-[-0.31px] text-white hover:text-white transition-colors">Политика конфиденциальности</a></li>
