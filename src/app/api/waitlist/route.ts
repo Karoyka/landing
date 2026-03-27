@@ -1,8 +1,7 @@
 import {NextRequest, NextResponse} from 'next/server'
-import {broadcastMessage} from '@/lib/subscribers'
 
-const BOT_TOKEN = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN
-const CHAT_ID = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID
+const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN
+const CHAT_ID = process.env.TELEGRAM_CHAT_ID
 
 export async function POST(req: NextRequest) {
     if (!BOT_TOKEN || !CHAT_ID) {
@@ -12,7 +11,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json()
     const {name, email, phone, location, category, extra} = body
 
-    const adminLines = [
+    const lines = [
         '🌿 <b>Новая заявка в лист ожидания</b>',
         '',
         `👤 <b>Имя:</b> ${name}`,
@@ -28,7 +27,7 @@ export async function POST(req: NextRequest) {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
             chat_id: CHAT_ID,
-            text: adminLines,
+            text: lines,
             parse_mode: 'HTML',
         }),
     })
@@ -38,18 +37,6 @@ export async function POST(req: NextRequest) {
         console.error('[Telegram] error:', err)
         return NextResponse.json({error: 'Ошибка отправки'}, {status: 502})
     }
-
-    const broadcastText = [
-        '🌿 <b>Новый участник присоединился к Karoyka!</b>',
-        '',
-        `👤 <b>${name}</b> только что подал заявку в лист ожидания.`,
-        category ? `🧺 Категория: ${category}` : null,
-        location ? `📍 Локация: ${location}` : null,
-        '',
-        'Проект растёт — скоро запуск! 🚀',
-    ].filter(Boolean).join('\n')
-
-    await broadcastMessage(BOT_TOKEN, broadcastText)
 
     return NextResponse.json({ok: true})
 }
