@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
     if (chatId && text.startsWith('/start')) {
         addSubscriber(chatId)
 
-        const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN
+        const BOT_TOKEN = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN
         if (BOT_TOKEN) {
             await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
                 method: 'POST',
