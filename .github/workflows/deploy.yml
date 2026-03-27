@@ -22,6 +22,9 @@ jobs:
         run: |
           npm ci
           npm run build
+        env:
+          NEXT_PUBLIC_TELEGRAM_BOT_TOKEN: ${{ secrets.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN }}
+          NEXT_PUBLIC_TELEGRAM_CHAT_ID: ${{ secrets.NEXT_PUBLIC_TELEGRAM_CHAT_ID }}
 
       - name: Clear public_html
         uses: appleboy/ssh-action@v1
