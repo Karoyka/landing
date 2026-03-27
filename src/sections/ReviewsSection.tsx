@@ -81,7 +81,7 @@ function ReviewCardSide({review}: { review: Review }) {
 
 function ReviewCardCenter({review}: { review: Review }) {
     return (
-        <div className="bg-white flex flex-col border border-[#E5E7EB] rounded-3xl p-5 w-full overflow-hidden my-3">
+        <div className="bg-white flex flex-col border border-[#E5E7EB] rounded-3xl p-5 w-full h-full overflow-hidden xl:my-3">
             <div className="w-16 h-16 rounded-full bg-[#F3F4F6] flex items-center justify-center overflow-hidden shrink-0">
                 <Image src={review.avatar} alt={review.name} width={64} height={64} className="object-contain w-full h-full"/>
             </div>
@@ -101,7 +101,7 @@ function MobileCarousel() {
     const [emblaRef] = useEmblaCarousel({align: "start", loop: false, dragFree: false});
     return (
         <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-4 pl-4">
+            <div className="flex items-stretch gap-4 pl-4">
                 <div className="flex-none w-[82%]"><ReviewCardSide review={review1}/></div>
                 <div className="flex-none w-[82%]"><ReviewCardCenter review={review2}/></div>
                 <div className="flex-none w-[82%]"><ReviewCardSide review={review3}/></div>

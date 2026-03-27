@@ -72,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru" className={`${inter.variable} ${lora.variable}`}>
+    <html lang="ru" className={`${inter.variable} ${lora.variable}`} style={{ scrollBehavior: 'smooth' }}>
       <body className="antialiased">
         {children}
         <CookieBanner />
