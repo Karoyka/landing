@@ -127,9 +127,9 @@ export const HowItWorksSection = () => {
     return (
         <section className='flex flex-col gap-8 text-center items-center justify-center'>
             <div className='flex flex-col text-center items-center justify-center xl:w-[642]'>
-                <p className='text-text font-extrabold text-[32px] leading-10 tracking-[0.37px]'>
+                <h2 className='text-text font-extrabold text-[32px] leading-10 tracking-[0.37px]'>
                     Что такое «Кароўка»?
-                </p>
+                </h2>
                 <p className='text-text-muted font-display font-normal text-[20px] leading-8 tracking-[0.26px]'>
                     — это платформа, созданная для фермеров и всех, кто ценит<br/>
                     и любит качественные натуральные продукты

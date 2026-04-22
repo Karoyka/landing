@@ -51,10 +51,10 @@ export default function Home() {
                     <div className="xl:-mx-[100px] xl:px-[120px]">
                         <HeroSection/>
                     </div>
-                    <div id="how-it-works"><HowItWorksSection/></div>
-                    <div id="how-it-works-farmers"><HowItWorksFarmers/></div>
-                    <div id="how-it-works-buyers"><HowItWorksBuyers/></div>
-                    <div id="join"><JoinWaitlistSection/></div>
+                    <section id="how-it-works" aria-label="Что такое Кароўка"><HowItWorksSection/></section>
+                    <section id="how-it-works-farmers" aria-label="Как это работает для фермеров"><HowItWorksFarmers/></section>
+                    <section id="how-it-works-buyers" aria-label="Как это работает для покупателей"><HowItWorksBuyers/></section>
+                    <section id="join" aria-label="Вступить в список ожидания"><JoinWaitlistSection/></section>
                     <div id="reviews"><ReviewsSection/></div>
                     <FooterSection/>
                 </div>
