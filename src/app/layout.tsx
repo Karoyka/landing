@@ -15,7 +15,6 @@ const lora = Lora({
   display: "swap",
 });
 
-// ─── SEO ──────────────────────────────────────────────────────────────────────
 const SITE_URL = "https://karowka.by";
 const SITE_NAME = "Кароўка";
 
@@ -93,7 +92,6 @@ export const metadata: Metadata = {
     },
   },
 };
-// ─────────────────────────────────────────────────────────────────────────────
 
 const jsonLd = {
   "@context": "https://schema.org",
