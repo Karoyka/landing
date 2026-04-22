@@ -11,10 +11,7 @@ export const HowItWorksBuyers = () => {
     return (
         <div className='flex flex-col xl:flex-row xl:items-center gap-8 xl:gap-12'>
 
-            {/* Left — content */}
             <div className='flex flex-col gap-8 flex-1'>
-
-                {/* Header */}
                 <div className='flex flex-col gap-2'>
                     <div className='flex flex-col items-center xl:items-start xl:flex-row xl:items-baseline xl:gap-3'>
                         <h2 className='text-text font-extrabold text-[28px] xl:text-[32px] leading-10 tracking-[0.37px]'>
@@ -30,7 +27,6 @@ export const HowItWorksBuyers = () => {
                     </p>
                 </div>
 
-                {/* Steps card */}
                 <div className='rounded-2xl overflow-hidden' style={{backgroundColor: 'var(--color-card-bg)'}}>
                     {steps.map((text, i) => (
                         <div key={i} className='flex items-start gap-5 px-6 py-5'>
