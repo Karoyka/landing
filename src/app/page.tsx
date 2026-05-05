@@ -17,11 +17,11 @@ export default function Home() {
 
                 {/* HERO IMAGE — desktop */}
                 <Image
-                    src="/img.png"
+                    src="/img.webp"
                     alt=""
                     width={1440}
                     height={1200}
-                    loading="lazy"
+                    priority
                     sizes="(min-width: 1440px) 1440px, 0px"
                     className="hidden xl:flex absolute top-[-115px] right-[-115px] w-[1440px] max-w-none pointer-events-none select-none"
                 />
@@ -29,7 +29,7 @@ export default function Home() {
                 {/* HERO IMAGE — mobile */}
                 <div className="xl:hidden absolute inset-0 pointer-events-none select-none">
                     <Image
-                        src="/img_mobile.png"
+                        src="/img_mobile.webp"
                         alt=""
                         width={716}
                         height={900}

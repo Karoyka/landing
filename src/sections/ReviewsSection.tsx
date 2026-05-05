@@ -5,7 +5,7 @@ import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 
 const review1 = {
-    avatar: "/avatar/avatar_1.png",
+    avatar: "/avatar/avatar_1.webp",
     text: "«Это именно то, что нужно нашему фермерскому сообществу. Прямой доступ к покупателям и получение обратной связи. Сразу станет понятно, что нужно клиентам.»",
     name: "Ольга",
     role: "Фермер зерновых и скота",
@@ -13,7 +13,7 @@ const review1 = {
 };
 
 const review2 = {
-    avatar: "/avatar/avatar_2.png",
+    avatar: "/avatar/avatar_2.webp",
     text: "«Отличный сервис, который поможет стать заметнее. Теперь больше людей будет знать, где можно купить фермерскую говядину, свинину или птицу»",
     name: "Ян",
     role: "Животновод",
@@ -21,7 +21,7 @@ const review2 = {
 };
 
 const review3 = {
-    avatar: "/avatar/avatar_3.png",
+    avatar: "/avatar/avatar_3.webp",
     text: "«Это будет работать лучше сарафанного радио! Придётся увеличивать производственные мощности моей пасеки :) »",
     name: "Кандрат",
     role: "Пчеловод",

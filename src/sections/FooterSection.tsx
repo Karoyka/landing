@@ -7,7 +7,7 @@ export default function FooterSection() {
       <div className="xl:hidden flex items-end pr-4 pt-10 gap-4 -mx-5 overflow-hidden">
         <div className="shrink-0 -ml-[50%]">
           <Image
-            src="/image/cow.png"
+            src="/image/cow.webp"
             alt="Корова"
             width={400}
             height={360}
@@ -41,7 +41,7 @@ export default function FooterSection() {
       <div className="hidden xl:block relative h-36 -mx-[100px]">
         <div className="absolute inset-0 overflow-hidden">
           <Image
-            src="/image/cow.png"
+            src="/image/cow.webp"
             alt="Корова"
             width={300}
             height={144}

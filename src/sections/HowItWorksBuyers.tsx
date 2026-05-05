@@ -44,7 +44,7 @@ export const HowItWorksBuyers = () => {
             {/* Right — map */}
             <div className='hidden xl:flex flex-1 items-center justify-center shrink-0'>
                 <Image
-                    src='/image/map.png'
+                    src='/image/map.webp'
                     alt='Карта фермеров'
                     width={700}
                     height={580}
